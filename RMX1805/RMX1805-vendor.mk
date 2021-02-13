@@ -154,11 +154,9 @@ PRODUCT_PACKAGES += \
     embms \
     imssettings \
     uceShimService \
-    CNEService \
     WfdService \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel \
     QtiTelephonyServicelibrary \
     WfdCommon \
     audiosphere \

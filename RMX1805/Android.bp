@@ -80,17 +80,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CNEService",
-	owner: "oppo",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "WfdService",
 	owner: "oppo",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
@@ -122,18 +111,6 @@ android_app_import {
 	},
 	privileged: true,
 }
-
-android_app_import {
-	name: "qcrilmsgtunnel",
-	owner: "oppo",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
 dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "oppo",
