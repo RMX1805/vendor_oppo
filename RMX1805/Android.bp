@@ -111,6 +111,7 @@ android_app_import {
 	},
 	privileged: true,
 }
+
 dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "oppo",
