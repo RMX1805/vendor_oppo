@@ -167,7 +167,6 @@ PRODUCT_PACKAGES += \
     embmslibrary \
     izat.xt.srv \
     qcrilhook \
-    qti-telephony-common \
     tcmclient \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V1.1-java \

@@ -173,12 +173,6 @@ dex_import {
 }
 
 dex_import {
-	name: "qti-telephony-common",
-	owner: "oppo",
-	jars: ["proprietary/framework/qti-telephony-common.jar"],
-}
-
-dex_import {
 	name: "tcmclient",
 	owner: "oppo",
 	jars: ["proprietary/framework/tcmclient.jar"],
