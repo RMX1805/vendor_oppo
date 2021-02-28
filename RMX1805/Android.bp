@@ -20,16 +20,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
-	owner: "oppo",
-	apk: "proprietary/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "SoterService",
 	owner: "oppo",
 	apk: "proprietary/app/SoterService/SoterService.apk",
@@ -53,16 +43,6 @@ android_app_import {
 	name: "embms",
 	owner: "oppo",
 	apk: "proprietary/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "imssettings",
-	owner: "oppo",
-	apk: "proprietary/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -102,20 +82,38 @@ android_app_import {
 }
 
 android_app_import {
+	name: "QtiTelephonyService",
+	owner: "oppo",
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "ims",
 	owner: "oppo",
-	apk: "proprietary/priv-app/ims/ims.apk",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	product_specific: true,
 }
 
-dex_import {
-	name: "QtiTelephonyServicelibrary",
+android_app_import {
+	name: "qcrilmsgtunnel",
 	owner: "oppo",
-	jars: ["proprietary/framework/QtiTelephonyServicelibrary.jar"],
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 dex_import {
@@ -164,12 +162,6 @@ dex_import {
 	name: "izat.xt.srv",
 	owner: "oppo",
 	jars: ["proprietary/framework/izat.xt.srv.jar"],
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "oppo",
-	jars: ["proprietary/framework/qcrilhook.jar"],
 }
 
 dex_import {
